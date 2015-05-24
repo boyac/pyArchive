@@ -24,10 +24,8 @@ education may also be treated in a linear fashion.
 S = B0 + B1X + r1E1 + r2E2 + s1M + e
 """
 
-
 import pandas as pd
 import statsmodels.formula.api as sm
-
 
 df = pd.read_table("P130.txt")
 y = df.S #response
