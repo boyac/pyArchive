@@ -1,4 +1,5 @@
 # ch05 salary survey data
+# BACKGROUND and MODEL DESCRIPTION
 """
 Qualitative or categorical variables can be very useful 
 as predictor variables in regression analysis,
@@ -22,16 +23,11 @@ education may also be treated in a linear fashion.
 //model 
 S = B0 + B1X + r1E1 + r2E2 + s1M + e
 """
+
+
 import pandas as pd
 import statsmodels.formula.api as sm
 
-"""import numpy as np
-from pandas.stats.api import ols
-from matplotlib.pyplot import *
-import matplotlib.pyplot as plt
-import statsmodels.api as sm
-import statsmodels.formula.api as smf
-"""
 
 df = pd.read_table("P130.txt")
 y = df.S #response
@@ -40,27 +36,3 @@ x2 = df.E
 x3 = df.M
 est = sm.ols(formula="y ~ x1 + x2 + x3", data=df).fit()
 print est.summary()
-
-"""
-est = sm.OLS(y, x)
-est = est.fit()
-est.summary()
-#%pylab inline
-x_prime = np.linspace(x.X.min(), x.X.max(), 100)[:, np.newaxis]
-x_prime = sm.add_constant(x_prime) # add constant as we did before
-
-# now we calculate the predicted values
-y_hat = est.predict(x_prime)
-
-plt.scatter(x.X, y, alpha=0.3) #plot the raw data
-plt.xlabel("Years of Experiences")
-plt.ylabel("Salary")
-plt.plot(x_prime[:, 1], y_hat, 'r', alpha=0.9) # Add the regression line, colored in red
-
-plot(df)
-xlabel ("x- axis")
-ylabel ("my numbers")
-title("my figure")
-show()
-print df
-"""
