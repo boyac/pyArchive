@@ -39,7 +39,7 @@ x1 = df.X #predictor
 x2 = df.E
 x3 = df.M
 est = sm.ols(formula="y ~ x1 + x2 + x3", data=df).fit()
-print est.summary
+print est.summary()
 
 """
 est = sm.OLS(y, x)
