@@ -21,7 +21,7 @@ a linear relationship will be used for salary and experience.
 we shall assume that each additional year of experience is worth a fixed salary increment.
 education may also be treated in a linear fashion.	
 
-//MODEL_01 
+//MODEL_01 # to be refine
 S = B0 + B1X + r1E1 + r2E2 + s1M + e
 """
 
@@ -30,8 +30,8 @@ import pandas as pd
 import statsmodels.formula.api as sm
 
 df = pd.read_table("P130.txt")
-y = df.S #response
-x1 = df.X #predictor
+y = df.S # response
+x1 = df.X 
 x2 = df.E
 x3 = df.M
 est = sm.ols(formula="y ~ x1 + x2 + x3", data=df).fit()
