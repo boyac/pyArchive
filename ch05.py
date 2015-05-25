@@ -25,7 +25,7 @@ education may also be treated in a linear fashion.
 S = B0 + B1X + r1E1 + r2E2 + s1M + e
 """
 
-//CODE
+# CODE
 import pandas as pd
 import statsmodels.formula.api as sm
 
@@ -38,7 +38,7 @@ est = sm.ols(formula="y ~ x1 + x2 + x3", data=df).fit()
 print est.summary()
 
 
-//RESULT
+# RESULT
 """
 			OLS Regression Results
 ==============================================================================
