@@ -21,7 +21,7 @@ a linear relationship will be used for salary and experience.
 we shall assume that each additional year of experience is worth a fixed salary increment.
 education may also be treated in a linear fashion.	
 
-//MODEL_01 # to be refine
+//MODEL_01 # to be refined
 S = B0 + B1X + r1E1 + r2E2 + s1M + e
 """
 
@@ -65,3 +65,8 @@ Skew:                           0.479   Prob(JB):                        0.394
 Kurtosis:                       3.229   Cond. No.                         33.6
 ==============================================================================
 """
+
+
+
+# Residual Test Plot
+
