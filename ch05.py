@@ -1,5 +1,6 @@
 # ch05 salary survey data
-# BACKGROUND and MODEL DESCRIPTION
+
+# STEP 1. MODEL BUILDING
 """
 Qualitative or categorical variables can be very useful 
 as predictor variables in regression analysis,
@@ -38,7 +39,7 @@ est = sm.ols(formula="y ~ x1 + x2 + x3", data=df).fit()
 print est.summary()
 
 
-# RESULT
+# STEP 2. MODEL ADAQUACY
 """
 			OLS Regression Results
 ==============================================================================
@@ -67,6 +68,5 @@ Kurtosis:                       3.229   Cond. No.                         33.6
 """
 
 
-
-# Residual Test Plot
-
+# Step 3. MODEL ASSUMPTION
+# Residual test and diagnostic plots
