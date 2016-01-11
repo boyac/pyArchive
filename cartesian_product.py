@@ -8,7 +8,7 @@ def personalities(pay, hours, impact, edu):
 	money_grubber = [10, -1, 4, 2]
 	entrepreneur = [4, -2, 10, 8]
 	slacker = [1, -10, 2, 2]
-	acamemic = [2, -6, 8, 10]
+	academic = [2, -6, 8, 10]
 	#personalities = [[10, -1, 4, 2], [4, -2, 10, 8], [1, -10, 2, 2], [2, -6, 8, 10]]
 	#personalities = [10, -1, 4, 2]
 
