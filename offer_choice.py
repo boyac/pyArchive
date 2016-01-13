@@ -36,4 +36,4 @@ class CounterPart(object):
 	def offers(self, name_com, industry, location):
 		self.name_com = name_com
 		self.industry = industry
-		slef.location = location
+		self.location = location
