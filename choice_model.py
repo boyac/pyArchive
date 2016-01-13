@@ -62,7 +62,7 @@ class Name(object):
 
 
 
-class CounterPart(Name): # 這裡不確定是要這麼寫？？？ 還在找相關的資料
+class CounterPart(Name): # 這裡不確定是要這麼寫？？？ 還在讀相關的資料
 
 	def __init__(self, name):
 		self.name = name
