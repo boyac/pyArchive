@@ -77,7 +77,7 @@ class CounterPart(Name): # 這裡不確定是要這麼寫？？？ 還在找相�
 
 		self.relationships = relationships
 
-		if self.location == SAME # 我還不知道要怎麼把他練到對照組
+		if self.location == SAME # 我還不知道要怎麼把他連到對照組，然後做比較
 			if self.relationships == 'Friends':
 				relationships_score =+ 20
 			elif self.relationships == 'Dating':
