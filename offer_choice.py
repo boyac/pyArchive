@@ -57,3 +57,6 @@ class CounterPart(object):
 		self.name_com = name_com
 		self.industry = industry
 		self.location = location
+
+
+
