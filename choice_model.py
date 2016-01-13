@@ -30,7 +30,7 @@ class Name(object):
 	def relationship(self, relationship):
 		self.relationship = relationship
 
-	def score(self):
+	def combo_score(self):
 		combo = [] 
 		if self.personalities == 'Money Grubber':
 			combo.append(p0[0])
@@ -41,15 +41,29 @@ class Name(object):
 		elif self.personalities == 'Academic':
 			combo.append(p0[3])
 		else:
-			return 'Maybe Typo'
+			return 'Error'
 
-		if self.industry == ''	
+		if self.industry == 'Big Software':
+			combo.append(j0[0])
+		if self.industry == 'Hedge Fund':
+			combo.append(j0[1])
+		if self.industry == 'Investment Bank':
+			combo.append(j0[2])
+		if self.industry == 'Startup':
+			combo.append(j0[3])
+		if self.industry == 'Grad School':
+			combo.append(j0[4])
 
 		score = sum(map(lambda x, y: x*y, combo[0], combo[1]))
 		return score
 
+	def total_score(self):
+		
 
-class CounterPart(object):
+
+
+class CounterPart(Name): # 這裡不確定是要這麼寫？？？ 還在找相關的資料
+
 	def __init__(self, name):
 		self.name = name
 
@@ -57,6 +71,25 @@ class CounterPart(object):
 		self.name_com = name_com
 		self.industry = industry
 		self.location = location
+
+	def relationships_score(self, relationships):
+		relationships_score = 0 
+
+		self.relationships = relationships
+
+		if self.location == SAME # 我還不知道要怎麼把他練到對照組
+			if self.relationships == 'Friends':
+				relationships_score =+ 20
+			elif self.relationships == 'Dating':
+				relationships_score =+ 50
+			elif self.relationships_score == 'Mortal Enemies'
+				return 'Error'
+		else:
+			if self.location != 
+				if self.relationships == 'Married':
+					return 'Error'
+				else:
+					return 'None'
 
 
 
