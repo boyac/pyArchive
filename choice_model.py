@@ -26,11 +26,28 @@ class Name(object):
 		self.name_com = name_com
 		self.industry = industry
 		self.location = location
-	
+		
+		offer = [] 
+		return offer.append(self.name, self.personalities, self.name_com, self.industry, self.location)
+
+
 	def relationship(self, relationship):
 		self.relationship = relationship
 
-	def combo_score(self):
+
+class  OffersPair(Name):
+	def pair(self, offer_a, offer_b):
+		self.offer_a = offer_a
+		self.offer_b = offer_b
+
+		pair = []
+		for i, j in range(len(offer)): 
+			if offer[i][0] != offer[j][0]:
+				return pair.append(offer[i], offer[j])
+
+	
+class Calculator(Name):
+	 def combo_score(self):
 		combo = [] 
 		if self.personalities == 'Money Grubber':
 			combo.append(p0[0])
@@ -54,15 +71,15 @@ class Name(object):
 		if self.industry == 'Grad School':
 			combo.append(j0[4])
 
-		score = sum(map(lambda x, y: x*y, combo[0], combo[1]))
-		return score
-
-	def total_score(self):
+		combo_score = sum(map(lambda x, y: x*y, combo[0], combo[1]))
 		
+		return combo_score
+		return self.name, self.personalities, self.name_com, self.industry, self.location
 
 
 
-class CounterPart(Name): # 這裡不確定是要這麼寫？？？ 還在讀相關的資料
+
+class CounterPart(Name): # 這裡不確定是要這麼寫？？？ 還在找相關的資料做參考 ＃（http://interactivepython.org/courselib/static/pythonds/index.html）
 
 	def __init__(self, name):
 		self.name = name
@@ -77,7 +94,7 @@ class CounterPart(Name): # 這裡不確定是要這麼寫？？？ 還在讀相�
 
 		self.relationships = relationships
 
-		if self.location == SAME # 我還不知道要怎麼把他連到對照組，然後做比較
+		if self.location == SAME # 我還不知道要怎麼把他練到對照組
 			if self.relationships == 'Friends':
 				relationships_score =+ 20
 			elif self.relationships == 'Dating':
@@ -90,6 +107,4 @@ class CounterPart(Name): # 這裡不確定是要這麼寫？？？ 還在讀相�
 					return 'Error'
 				else:
 					return 'None'
-
-
 
