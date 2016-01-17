@@ -24,18 +24,22 @@ people = [
 offers = [
 ['Amy', 'Academic', 'MacroHard', 'Big Software Firm', 'Seattle'],
 ['Amy', 'Academic', 'Stanguard College', 'Grad School', 'San Francisco'],
-['Amy', 'Academic', 'Dartboard Modeling', 'Hedge Fund', 'NYC'],
+['Amy', 'Academic', 'Dartboard Modeling', 'Hedg Fund', 'NYC'],
 ['Bob', 'Entrepreneur', 'Bigup-Side', 'Startup', 'NYC'],
 ['Bob', 'Entrepreneur', 'Questionable Tactics', 'Hedge Fund', 'San Francisco'],
 ['Charlie', 'Money Grubber', 'Cash-Money Inc.', 'Investment Bank', 'NYC'],
 ['Charlie', 'Money Grubber', 'Arbitrack', 'Hedge Fund', 'San Francisco']
 ]
+ 
+relationships= [
+['Bob', 'Amy', 'Dating'],
+['Bob', 'Charlie', 'Mortal Enemies']
+]
+
 
 import itertools
-
+import numpy
 class Name(object):
-	#def __init__(self, name):
-	#	self.name = name
 
 	def __init__(self, name, personalities, company, industry, location):
 		self.name = name
@@ -45,77 +49,87 @@ class Name(object):
 		self.location = location
 
 
-	def personalities(self, personalities):
-		self.personalities = personalities
+	def combo_score(self, combo_score=[], combo_total=[]):
 
-	def offers(self):
-		
-		offers = [] 
-		#return offers.append(['%s, %s, %s, %s, %s']) % (self.name, self.personalities, self.company, self.industry, self.location) # fixing this soon
-		return 'TEST, Happy 2016!!'
+		self.combo_total = combo_total
+		self.combo_score = combo_score
 
-	def relationship(self, relationship):
-		self.relationship = relationship
-
-
-class  OffersPair(Name):
-	def pair(self, offer):
-		self.offer = offer 
-
-		pairs = []
-		for i,j in itertools.combinations(self.offer, 2): #offer 變數來自上一個 def offers 裡面
-			if i != j:
-				return pair.append((i, j)) #這裡只產生 A(一人為 base 值的的組合與對照組)
-
-class Calculator(Name):
-	 def combo_score(self):
-		combo = [] 
 		if self.personalities == 'Money Grubber':
-			combo.append(p0[0])
+			self.combo_score.append(p0[0])
 		elif self.personalities == 'Entrepreneur':
-			combo.append(p0[1])
+			self.combo_score.append(p0[1])
 		elif self.personalities == 'Slacker':
-			combo.append(p0[2])
+			self.combo_score.append(p0[2])
 		elif self.personalities == 'Academic':
-			combo.append(p0[3])
+			sfelf.combo_score.append(p0[3])
 		else:
 			return 'Error'
 
-		if self.industry == 'Big Software':
-			combo.append(j0[0])
-		if self.industry == 'Hedge Fund':
-			combo.append(j0[1])
-		if self.industry == 'Investment Bank':
-			combo.append(j0[2])
-		if self.industry == 'Startup':
-			combo.append(j0[3])
-		if self.industry == 'Grad School':
-			combo.append(j0[4])
+		if self.industry == 'Big Software Firm':
+			self.combo_score.append(j0[0])
+		elif self.industry == 'Hedge Fund':
+			self.combo_score.append(j0[1])
+		elif self.industry == 'Investment Bank':
+			self.combo_score.append(j0[2])
+		elif self.industry == 'Startup':
+			self.combo_score.append(j0[3])
+		elif self.industry == 'Grad School':
+			self.combo_score.append(j0[4])
+		else:
+			return 'Error'
 
-		combo_score = sum(map(lambda x, y: x*y, combo[0], combo[1]))
+		self.combo_total = sum(map(lambda x, y: x*y, self.combo_score[0], self.combo_score[1]))
+		return self.combo_total
+	
+
+	
+	def offers(self, offers=[], offers_a=[], offers_b=[]):
+		self.offers = offers
 		
-		return combo_score
-		#return self.name, self.personalities, self.name_com, self.industry, self.location
+		self.offers.extend([self.name, self.personalities, self.company, self.industry, self.location, self.location]) 
+		
+		return self.offers
+		
+
+	def offers_c(self, offers_c=[]): #counterpart's offer
+ 		self.offers_c = offers_c
+		self.offers_c.extend([self.name, self.personalities, self.company, self.industry, self.location, self.location]) 
+		return self.offers_c
+		
+
+	def pairs(self, pairs=[]): #paring the offers of counterpart's
+		self.pairs = pairs
+
+		for i in itertools.product(self.offers(), self.offers_c()):
+			if i[0] != i[1]:
+				self.pairs.append(i)
+	
+		return self.pairs
 
 
+	def status(self, connection=[], status=[]): # aftering the pairing, see the relationships of each Name pair
+		self.connection = connection
+		self.status = status
+		for x in relationships: # make combinations of relationship and check if pairs(index name) are defined in the relationships list
+		    self.connection.append(([x[0],x[1],x[2]]))
+		    self.connection.append(([x[1],x[0],x[2]]))
 
 
-class CounterPart(Name): # 這裡不確定是要這麼開一個新 class 寫？？？ 還在找相關的資料做參考 ＃（http://interactivepython.org/courselib/static/pythonds/index.html）
+		for i, j in self.pairs:
+		    if set([i[0],j[0]]) in self.connection: # 這裡應該寫錯了
+		        #return i[0],j[0],x[2]
+		        self.status.append(i[0])
+		        return self.status
+		    
 
-	def __init__(self, name):
+	def relationships(self, name, name2, relationships):
 		self.name = name
-
-	def offers(self, name_com, industry, location):
-		self.name_com = name_com
-		self.industry = industry
-		self.location = location
-
-	def relationships_score(self, relationships):
-		relationships_score = 0 
-
+		self.name2 = name2
 		self.relationships = relationships
 
-		for i, j in pairs:
+		relationships_score = 0 
+
+		for i, j in self.pairs:
 			if i[5] == j[5]: # 這裡表示 location 如果相同；＃我還不知道要怎麼把他練到對照組
 				if self.relationships == 'Friends':
 					relationships_score =+ 20
@@ -132,8 +146,22 @@ class CounterPart(Name): # 這裡不確定是要這麼開一個新 class 寫？�
 					return 'None'
 
 
-#TEST
-amy = Name('Amy', 'Academic', 'MacroHard', 'Big Software Firm', 'Seattle')
-print amy.offers()
+	
 
+# TEST 
+amy = Name(['Amy', 'Academic', 'MacroHard', 'Big Software Firm', 'Seattle'],
+['Amy', 'Academic', 'Stanguard College', 'Grad School', 'San Francisco'],
+['Amy', 'Academic', 'Dartboard Modeling', 'Hedg Fund', 'NYC'],
+['Bob', 'Entrepreneur', 'Bigup-Side', 'Startup', 'NYC'],
+['Bob', 'Entrepreneur', 'Questionable Tactics', 'Hedge Fund', 'San Francisco']
+)
 
+bob = Name(['Amy', 'Academic', 'MacroHard', 'Big Software Firm', 'Seattle'],
+['Amy', 'Academic', 'Stanguard College', 'Grad School', 'San Francisco'],
+['Amy', 'Academic', 'Dartboard Modeling', 'Hedg Fund', 'NYC'],
+['Bob', 'Entrepreneur', 'Bigup-Side', 'Startup', 'NYC'],
+['Bob', 'Entrepreneur', 'Questionable Tactics', 'Hedge Fund', 'San Francisco']
+)
+
+print bob.pairs()
+print bob.status()
