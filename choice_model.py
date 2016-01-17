@@ -147,7 +147,6 @@ class Name(object):
 
 
 	
-# ref: http://interactivepython.org/runestone/static/pythonds/index.html
 # TEST 
 amy = Name(['Amy', 'Academic', 'MacroHard', 'Big Software Firm', 'Seattle'],
 ['Amy', 'Academic', 'Stanguard College', 'Grad School', 'San Francisco'],
@@ -165,3 +164,6 @@ bob = Name(['Amy', 'Academic', 'MacroHard', 'Big Software Firm', 'Seattle'],
 
 print bob.pairs()
 print bob.status()
+
+
+# ref: http://interactivepython.org/runestone/static/pythonds/index.html
