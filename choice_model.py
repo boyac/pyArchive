@@ -130,7 +130,7 @@ class Name(object):
 		relationships_score = 0 
 
 		for i, j in self.pairs:
-			if i[5] == j[5]: # 這裡表示 location 如果相同；＃我還不知道要怎麼把他練到對照組
+			if i[5] == j[5]: # 這裡表示 location 如果相同
 				if self.relationships == 'Friends':
 					relationships_score =+ 20
 				elif self.relationships == 'Dating':
@@ -147,7 +147,7 @@ class Name(object):
 
 
 	
-
+# ref: http://interactivepython.org/runestone/static/pythonds/index.html
 # TEST 
 amy = Name(['Amy', 'Academic', 'MacroHard', 'Big Software Firm', 'Seattle'],
 ['Amy', 'Academic', 'Stanguard College', 'Grad School', 'San Francisco'],
