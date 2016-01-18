@@ -19,6 +19,7 @@ def score(goal,teststring):
 	return numSame / len(goal) 
 
 #print score('methinks it is like a result', generateOne(28))
+
 def main():
 	#goalstring = 'methinks it is like a weasel'
 	goalstring = 'alexis is pig'
