@@ -2,10 +2,11 @@ from __future__ import division
 import random
 
 def generateOne(strlen):
-	alphabet = 'abcdefghijklmnopqrstuvwxyz '
+	alphabet = 'abcdefghijklmnopqrstuvwxyz ,-'
+	alphabetlen = len(alphabet)
 	res = ''
 	for i in range(strlen):
-		res = res + alphabet[random.randrange(27)]
+		res = res + alphabet[random.randrange(alphabetlen)]
 
 	return res
 
@@ -19,11 +20,11 @@ def score(goal,teststring):
 	return numSame / len(goal) 
 
 #print score('methinks it is like a result', generateOne(28))
-
 def main():
 	#goalstring = 'methinks it is like a weasel'
-	goalstring = 'alexis is pig'
-	newstring = generateOne(13)
+	goalstring = 'in the country of the blind, the one-eyed man is king'
+	goallen = len(goalstring)
+	newstring = generateOne(goallen)
 	newscore = score(goalstring,newstring)
 	best = 0
 	count = 0
@@ -33,7 +34,10 @@ def main():
 			print count, best, newscore, newstring
 			count = count + 1
 			best = newscore
-		newstring = generateOne(13)
+		if newscore == 1: 
+			print count, newstring, 'DONE!'
+			exit()
+		newstring = generateOne(goallen)
 		newscore = score(goalstring,newstring)
 		
 main()
