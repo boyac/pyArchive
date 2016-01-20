@@ -30,9 +30,10 @@ def main():
 	count = 0
 	
 	while newscore <= 1:
+		count += 1
 		if newscore > best:
 			print count, best, newscore, newstring
-			count = count + 1
+			#count = count + 1
 			best = newscore
 		if newscore == 1: 
 			print count, newstring, 'DONE!'
