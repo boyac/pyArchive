@@ -1,4 +1,7 @@
 #Hill Climbing Optimization
+# to check if the randomly generated string appears in our written target string,
+# by using the hill climbing method to print only the result completion (shown by percentage) better than previous result
+
 from __future__ import division
 import random
 
