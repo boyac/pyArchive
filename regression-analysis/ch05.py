@@ -1,3 +1,4 @@
+# introducing the dummy variables in our model
 # ch05 salary survey data
 
 # STEP 1. MODEL BUILDING
