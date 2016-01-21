@@ -1,4 +1,5 @@
 combo = ['Amy', 'Bob']
+combo2 = ['Bob', 'Ted'] 
 re = ['Bob', 'Amy', 'Dating']
 
 def connect(s1,s2):
