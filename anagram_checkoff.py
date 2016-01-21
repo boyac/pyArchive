@@ -1,3 +1,6 @@
+# checking if the combination appears in the relationship chart
+# will need to develop into nested lists
+
 combo = ['Amy', 'Bob']
 combo2 = ['Bob', 'Ted'] 
 re = ['Bob', 'Amy', 'Dating']
