@@ -6,5 +6,4 @@ def summention():
         total += i
     return total
 
-
 print summention()
