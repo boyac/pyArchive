@@ -3,7 +3,7 @@
 
 combo = ['Amy', 'Bob']
 combo2 = ['Bob', 'Ted'] 
-re = ['Bob', 'Amy', 'Dating']
+re = ['Bob', 'Amy', 'Friends']
 
 def connect(s1,s2):
     pos1 = 0
