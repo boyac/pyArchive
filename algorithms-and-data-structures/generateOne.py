@@ -1,4 +1,4 @@
-#Hill Climbing Optimization
+# Hill Climbing Optimization
 # to check if the randomly generated string appears in our written target string,
 # and using the hill climbing optimization method to print only the result completion (shown by the percentage) better than previous result
 
