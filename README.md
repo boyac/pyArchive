@@ -3,4 +3,4 @@
   -- concept summaries
   -- example codes
 - Project 2: examples of Algorithm notes in Python
-- miscellaneous scripts in Python
+- miscellaneous Python scripts
