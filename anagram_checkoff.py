@@ -2,7 +2,7 @@
 # will need to develop into nested lists
 
 combo = ['Amy', 'Bob']
-combo2 = ['Bob', 'Ted'] 
+#combo2 = ['Bob', 'Ted'] 
 re = ['Bob', 'Amy', 'Friends']
 
 def connect(s1,s2):
