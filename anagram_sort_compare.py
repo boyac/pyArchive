@@ -13,7 +13,7 @@ def connection_2(s1,s2):
     matches = True
 
     while pos < len(s1) and matches:
-        if alist1[pos]==alist2[pos]:
+        if alist1[pos] == alist2[pos]:
             pos = pos + 1
         else:
             matches = False
