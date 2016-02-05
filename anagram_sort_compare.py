@@ -1,9 +1,7 @@
 combo = ['Boya', 'Chiou']
 #combo2 = ['Bob', 'Ted'] 
 re = ['Boya', 'Chiou', 'Friends']
-#re2 = ['Alexis', 'Saadat', 'Married']
-#re3 = ['Alexis','Eric', 'Couple']
-#re4 = ['Alexis', 'Neil', 'Gay-mates']
+
 
 def connection_2(s1,s2):
     alist1 = list(s1)
