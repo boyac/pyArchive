@@ -2,7 +2,6 @@ combo = ['Boya', 'Chiou']
 #combo2 = ['Bob', 'Ted'] 
 re = ['Boya', 'Chiou', 'Friends']
 
-
 def connection_2(s1,s2):
     alist1 = list(s1)
     alist2 = list(s2)
