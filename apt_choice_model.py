@@ -1,4 +1,4 @@
-# not a good start, definitely gotta rethink about the designated input & output
+# 需要重寫
 # -*- coding: utf-8 -*-
 p0 = [[10, -1, 4, 2], [4, -2, 10, 8], [1, -10, 2, 2], [2, -6, 8, 10]]
 j0 = [[6, 6, 2, 8], [8, 8, 4, 6], [10, 10, 3, 4], [4, 8, 10, 8], [1, 4, 3, 10]]
