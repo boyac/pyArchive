@@ -1,4 +1,5 @@
-# below code shows the plot of x and y (log model?), but I am looking for a package to return a polynomial model explaining the input data
+# below code shows the plot of x and y (log model?)
+# I need to look for a package that returns a polynomial model explaining the input data
 def bird(number):
     birds = mins = 0
     while number > birds:
