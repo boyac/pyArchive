@@ -1,2 +1,2 @@
 # pydata
-- use Python 2.7
+- use python 2.7
