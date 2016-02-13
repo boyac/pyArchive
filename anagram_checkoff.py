@@ -1,5 +1,5 @@
 # checking if the combination appears in the relationship chart
-# will need to develop into nested lists
+# need a nested lists example
 
 combo = ['Amy', 'Bob']
 #combo2 = ['Bob', 'Ted'] 
