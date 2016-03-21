@@ -9,8 +9,7 @@ class Sort:
 	            	self.myList[i],self.myList[i+1] = self.myList[i+1],self.myList[i] #if List[i] > List[i+1], swaps position
 	    return self.myList
 
-
-	def merge(self):
+	#def merge(self):
 		
 
 def main(): #instantiating the class, for the class we created to be actually use
