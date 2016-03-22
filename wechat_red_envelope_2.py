@@ -17,7 +17,7 @@ class Lucky:
 	
 	def env(self):
 		for index, element in enumerate(Lucky.money(self)):
-			print 'No.{}, {} 元'.format(index+1, element)
+			print '猴年發財 No.{}, {} 元'.format(index+1, element)
 		
 
 def main():
