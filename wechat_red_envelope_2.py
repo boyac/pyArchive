@@ -16,7 +16,7 @@ class Lucky:
 	    #return reduce(lambda x, y: x+y, self.hong_bao) #works the same as flatten()
 	
 	def env(self):
-		for index, element in enumerate(self.hong_bao.tolist()):
+		for index, element in enumerate(Lucky.money(self)):
 			print 'No.{}, {} 元'.format(index+1, element)
 		
 
