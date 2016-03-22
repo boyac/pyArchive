@@ -1,7 +1,7 @@
 - problem solving with algorithms and data structures
 - ref: http://interactivepython.org/runestone/static/pythonds/index.html
-"""
-- Merge Sort
+
+- Merge Sort <a href='http://interactivepython.org/runestone/static/pythonds/index.html'>Merge</a>
 - Quick Sort
 - Binary Search
 - Strassen's Matrix Multiplication
