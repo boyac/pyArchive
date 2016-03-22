@@ -1,6 +1,9 @@
 # -*- coding: utf-8 -*-
 import numpy as np, numpy.random
 class Lucky:
+	"""
+	The user assigns a lump sum to a group red envelope, and the number of small red envelopes within it.
+	"""
 	def __init__(self, amount, n):
 		self.amount = amount
 		self.n = n
