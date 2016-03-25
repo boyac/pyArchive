@@ -71,3 +71,5 @@ Kurtosis:                       3.229   Cond. No.                         33.6
 
 # STEP 3. MODEL ASSUMPTION
 # Residual test and diagnostic plots
+
+# Honestly speaking, STATA is really handy...
