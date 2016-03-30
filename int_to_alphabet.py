@@ -50,6 +50,6 @@ def int_to_alphabet(number):
         return "negative " + " ".join(words)
 
 
-lst = [0, 9, 11, 21, 30, 100, 1000, -9, -11, -21, -30, -100, -1000]
+lst = [0, 9, 11, 21, 30, 100, 1000, -9, -11, -21, -30, -100, -1000] # bugs at value -21, got no idea why
 for i in lst:
     print int_to_alphabet(i)
