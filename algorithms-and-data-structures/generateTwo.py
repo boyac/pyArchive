@@ -1,5 +1,6 @@
 # How many searches do you need to find an element between 0 and 1000?
 __author__ = 'Boya Chiou'
+
 from __future__ import division
 import random
 
