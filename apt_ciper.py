@@ -1,3 +1,4 @@
+#ref: http://harrypotter.wikia.com/wiki/Marauder's_Map
 import collections
 text = 'APT strives to be the ? ? ? ? ? ? ? ? ? ? to unite consulting and technology'
 code = '| @ } $ ^ & - # { & * ~ + { & * { & { ~ } ^ ~ & @ ) % & @ } ^ ( ! ^ @ #'
