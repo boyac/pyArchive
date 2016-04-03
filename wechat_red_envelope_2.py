@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+__author__ = 'Boya Chiou'
+
 import numpy as np, numpy.random
 class Lucky:
 	"""
