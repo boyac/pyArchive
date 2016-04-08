@@ -1,6 +1,6 @@
 # ref: https://www.youtube.com/watch?v=6nDMgr0-Yyo
 
-def select_sort(lst):
+def selection_sort(lst):
 	index = len(lst) - 1
 	while index:
 		max_index = index
