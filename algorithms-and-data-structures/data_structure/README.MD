@@ -1,0 +1,7 @@
+- Arrays
+- Hash Table
+- Linked List
+- Queues
+- Stack
+- Trees
+- Tries
