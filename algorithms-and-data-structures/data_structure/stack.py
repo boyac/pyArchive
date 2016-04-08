@@ -1,3 +1,5 @@
+# Difference between stack and queues is only removing; stack is LIFO while queues is FIFO
+
 class Stack:
 	def __init__(self):
 		self.items = []
