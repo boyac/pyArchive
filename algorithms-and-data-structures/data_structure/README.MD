@@ -1,7 +1,7 @@
 - Arrays
-- Hash Table
-- Linked List
+- ~~Hash Table~~
+- ~~Linked List~~
 - Queues
-- Stack
+- ~~Stack~~
 - Trees
 - Tries
