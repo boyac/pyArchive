@@ -24,7 +24,7 @@ we shall assume that each additional year of experience is worth a fixed salary 
 education may also be treated in a linear fashion.	
 
 //MODEL_01 # to be refined
-S = B0 + B1X + r1E1 + r2E2 + s1M + e
+S = B0 + B1X + r1E1 + r2E2 + s1M + e # r1, r2, s1 are coefficents of dummy/categorical variables
 """
 
 # CODE
