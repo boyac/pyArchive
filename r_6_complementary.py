@@ -9,7 +9,7 @@ A_value = [1, 8, -3, 0, 1, 3, -2, 4, 5]
 
 Klist = []
 for i, j in A:
-    K = A_value[i]+A_value[j]
+    K = A_value[i] + A_value[j]
     Klist.append(K)
 
 print Klist.count(K)
