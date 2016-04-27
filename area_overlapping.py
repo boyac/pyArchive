@@ -6,7 +6,7 @@
 
 def rec(a, b):
 	""""
-	return if retangles overlaps, even points
+	return if two retangles overlaps
 	"""
 	if b[0][0] > a[1][0]:
 		return 'Safe'
