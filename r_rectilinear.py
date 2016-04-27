@@ -12,7 +12,6 @@ if rectangles have overlapped, count only once for the overlapped area
 	area = (M-K)*(N-L)+(R-P)*(S-Q)
 	#if (P>M or R<K or S<L or Q<N): # no overlapping area
 	if (P>M or S<L): # no overlapping area
-	
 	    if area <= 2147483647:
 	        return area
 	    else:
