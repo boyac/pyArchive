@@ -5,9 +5,10 @@
 # @Last Modified time: 2016-04-27 21:52:54
 
 def area(K, L, M, N, P, Q, R, S):
-  """
-  calculate the sum of areas of two rectangles, if regtangles have overlapped, count once once for the overlapped area
-  """
+"""
+Calculate the sum of areas of two rectangles, 
+if rectangles have overlapped, count only once for the overlapped area
+"""
 	area = (M-K)*(N-L)+(R-P)*(S-Q)
 	#if (P>M or R<K or S<L or Q<N): # no overlapping area
 	if (P>M or S<L): # no overlapping area
