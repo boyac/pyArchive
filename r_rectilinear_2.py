@@ -5,6 +5,10 @@
 # @Last Modified time: 2016-04-27 21:52:54
 
 def area(K, L, M, N, P, Q, R, S):
+"""	
+Calculate the sum of areas of two rectangles and 
+count only once for the overlapped area if any.
+"""
 	area = (M-K)*(N-L)+(R-P)*(S-Q)
 	overlap = (M-P)*(S-L)
 	if area <= 2147483647:
