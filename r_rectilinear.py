@@ -23,4 +23,4 @@ count only once for the overlapped area if any.
 
 # Test 
 x = lambda: area (-4, 1, 2, 6, 0, -1, 4, 3)
-print min(timeit.repeat(x, number=1000000))
+print min(timeit.repeat(x, number=1000000)) # test the time cost to execute 1,000,000 times
