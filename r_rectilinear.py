@@ -3,6 +3,7 @@
 # @Date:   2016-04-27 20:40:29
 # @Last Modified by:   boyac
 # @Last Modified time: 2016-04-27 21:52:54
+import timeit
 
 def area(K, L, M, N, P, Q, R, S):
 """
@@ -21,4 +22,5 @@ count only once for the overlapped area if any.
 	    return area - lap
 
 # Test 
-print area(-4, 1, 2, 6, 0, -1, 4, 3)
+x = lambda: area (-4, 1, 2, 6, 0, -1, 4, 3)
+print min(timeit.repeat(x, number=1000000))
