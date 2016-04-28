@@ -17,5 +17,3 @@ count only once for the overlapped area if any.
 		return -1
 		
 print area(-4, 1, 2, 6, 0, -1, 4, 3)
-
-
