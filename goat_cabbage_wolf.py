@@ -21,11 +21,11 @@ def broccoli():
 
     # STEP 1  get respective permutations of total, goat_cabbage, goat_wolf
     # STEP 2 iterate over permutations of total(per_to) and goat_cabbage(goat_c), 
-                # return the difference (差集), then append to item of goat_c
+                # return the set difference (差集), then append to item of goat_c
     # STEP 3 iterate over permutations of total(per_to) and goat_wolf(goat_w), 
-                # return the difference (差集), then append to item of goat_w
+                # return the set difference (差集), then append to item of goat_w
     # STEP 4 iterate over permutations per_to and goat_c, 
-                # return the difference (差集) 
+                # return the set difference (差集) 
     # STEP 5 iterate over permutations per_to and goat_w
-                # return the difference (差集)
+                # return the set difference (差集)
     # STEP 6 final result, of combined result of STEP 4 & STEP 5
