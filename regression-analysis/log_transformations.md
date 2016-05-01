@@ -1,5 +1,5 @@
 #### predicted lnwage = 0.659 + 0.084GRADE + 0.136LNTENURE - 0.151SOUTH
-[Regression Output: log_transformation.txt](log_transformation.txt)
+[Regression Output: log_transformation.txt](log_transform/log_transformation.txt)
 
 ```
 . gen lntenure = ln(tenure) # log transformation
@@ -116,16 +116,16 @@
 ```
 
 ### skewed tenure
-![alt tag](tenure.jpg)
+![alt tag](log_transform/tenure.jpg)
 
 ### logged tenure
-![alt tag](lntenure.jpg)
+![alt tag](log_transform/lntenure.jpg)
 
 ### skewed wage
-![alt tag](wage.jpg)
+![alt tag](log_transform/wage.jpg)
 
 ### logged wage
-![alt tag](lnwage.jpg)
+![alt tag](log_transform/lnwage.jpg)
 
 
 
