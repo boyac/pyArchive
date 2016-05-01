@@ -14,6 +14,8 @@
 ![alt tag](lnwage.jpg)
 
 
-[Ref: 
-Princeton University Library	Data and Statistical 
+
+
+References:
+[Princeton University Library	Data and Statistical 
 Services - Log transformations interpretation](http://dss.princeton.edu/online_help/stats_packages/stata/log.html)
