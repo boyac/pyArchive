@@ -12,3 +12,6 @@
 
 ### logged wage
 ![alt tag](lnwage.jpg)
+
+
+[Ref: log_transformation interpretation](http://dss.princeton.edu/online_help/stats_packages/stata/log.html)
