@@ -1,32 +1,3 @@
-
-  ___  ____  ____  ____  ____ (R)
- /__    /   ____/   /   ____/
-___/   /   /___/   /   /___/   13.0   Copyright 1
-> 985-2013 StataCorp LP
-  Statistics/Data Analysis            StataCorp
-                                      4905 Lakewa
-> y Drive
-     MP - Parallel Edition            College Sta
-> tion, Texas 77845 USA
-                                      800-STATA-P
-> C        http://www.stata.com
-                                      979-696-460
-> 0        stata@stata.com
-                                      979-696-460
-> 1 (fax)
-
-3-user 8-core Stata network perpetual license:
-       Serial number:  501306208483
-         Licensed to:  IDRE-UCLA
-                       IDRE-UCLA
-
-Notes:
-      1.  (-set maxvar-) 5000 maximum variables
-
-. use "/Users/boyac/Downloads/nlsw88.dta"
-. gen lntenure = ln(tenure) # log transformation
-(66 missing values generated)
-
 . gen lnwage = ln(wage) # log transformation
 
 . reg lnwage grade tenure south
@@ -136,4 +107,3 @@ Notes:
        south |  -.1512664   .0213444    -7.09   0.000     -.193124   -.1094088
        _cons |   .6595915   .0572664    11.52   0.000     .5472889    .7718942
 ------------------------------------------------------------------------------
-
