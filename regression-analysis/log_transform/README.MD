@@ -17,5 +17,4 @@
 
 
 References:
-[Princeton University Library	Data and Statistical 
-Services - Log transformations interpretation](http://dss.princeton.edu/online_help/stats_packages/stata/log.html){:target="_blank"}
+- Princeton University Library	Data and Statistical Services - Log transformations interpretation
