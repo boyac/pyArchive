@@ -1,3 +1,4 @@
+```
 """
 Qualitative or categorical variables can be very useful 
 as predictor variables in regression analysis,
@@ -60,3 +61,4 @@ S = B0 + B1X + r1E1 + r2E2 + s1M + e # r1, r2, s1 are coefficents of dummy/categ
  management1 |  -6883.531    313.919   -21.93   0.000    -7517.503   -6249.559
        _cons |   17915.34   352.8435    50.77   0.000     17202.76    18627.92
 ------------------------------------------------------------------------------
+```
