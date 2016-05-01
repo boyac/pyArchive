@@ -1,3 +1,5 @@
+. gen lntenure = ln(tenure) # log transformation
+
 . gen lnwage = ln(wage) # log transformation
 
 . reg lnwage grade tenure south
