@@ -1,10 +1,11 @@
-- skewed tenure
+### skewed tenure
 ![alt tag](tenure.jpg)
 
-- logged tenure
+### logged tenure
 ![alt tag](lntenure.jpg)
 
-- skewed wage
+### skewed wage
 ![alt tag](wage.jpg)
-- logged wage
-![alt tag](lnwagee.jpg)
+
+### logged wage
+![alt tag](lnwage.jpg)
