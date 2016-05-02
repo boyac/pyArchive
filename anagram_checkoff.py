@@ -23,6 +23,3 @@ def connect(s1,s2):
     return new 
 
 print(connect(combo, re))
-
-
-
