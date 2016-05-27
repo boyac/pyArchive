@@ -1,9 +1,9 @@
-Consumer expenditure and money stock in the United States.
-Data: during 1952 to 1956; quarterly data in billions of dollars units.
+- Consumer expenditure and money stock in the United States.
+- Data: during 1952 to 1956; quarterly data in billions of dollars units.
 
-CONSUMER_EXPENDITURE = -154.719 + 2.300MONEY_STOCK
+#### CONSUMER_EXPENDITURE = -154.719 + 2.300MONEY_STOCK
 
-```
+```stata
 . reg expendit stock
 
       Source |       SS       df       MS              Number of obs =      20
