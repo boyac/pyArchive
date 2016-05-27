@@ -1,7 +1,7 @@
 #### predicted lnwage = 0.659 + 0.084GRADE + 0.136LNTENURE - 0.151SOUTH
 [Regression Output: log_transformation.txt](log_transformation.txt)
 
-```
+```stata
 . gen lntenure = ln(tenure) # log transformation
 
 . gen lnwage = ln(wage) # log transformation
