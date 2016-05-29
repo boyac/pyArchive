@@ -1,4 +1,12 @@
-# ESTIMATING PROBABILITY OF BANKRUPTCIES
+#### ESTIMATING PROBABILITY OF BANKRUPTCIES
+#### 
+- model: logit model
+- method of estimation: maximum likelihood method
+- y = 0 if bankrupt after 2 years; y = 1 if solvent after 2 years.
+- x1 = Retained Earnings / Total Assets
+- x2 = Earnings Before Interest and Taxes / Total Assets 
+- x3 = Sales / Total Assets
+
 ```stata
 . logit y x1 x2 x3
 
