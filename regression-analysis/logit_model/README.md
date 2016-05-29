@@ -33,7 +33,14 @@ Log likelihood = -2.9064524                       Pseudo R2       =     0.9365
        _cons |  -10.15345   10.84008    -0.94   0.349    -31.39962    11.09273
 ------------------------------------------------------------------------------
 Note: 17 failures and 10 successes completely determined.
+```
 
+```stata
+. logit, or
+
+Logistic regression                               Number of obs   =         66
+                                                  LR chi2(3)      =      85.68
+                                                  Prob > chi2     =     0.0000
 Log likelihood = -2.9064524                       Pseudo R2       =     0.9365
 
 ------------------------------------------------------------------------------
