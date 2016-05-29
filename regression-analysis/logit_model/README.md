@@ -1,4 +1,5 @@
-'''stata
+# ESTIMATING PROBABILITY OF BANKRUPTCIES
+```stata
 . logit y x1 x2 x3
 
 Iteration 0:   log likelihood = -45.747714  
