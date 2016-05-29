@@ -1,5 +1,10 @@
+##### Description
 - In the case of Japan
+
+#### Variables
 - Dependent variable: married female with kid(s)
+
+#### Predictors
 - tax incentives: if spouses' annual income below ￥1.03 million yen, tax reduction of ￥380,000
 - salary level: on average, female employees' salary of women are lower than male counterparts by 30.2%
 - managerial position ratio: among private companies, female only accounts 11% of its managerial positions
