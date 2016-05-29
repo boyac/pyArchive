@@ -1,5 +1,5 @@
 #### ESTIMATING PROBABILITY OF BANKRUPTCIES
-#### ln((p)/(1-p))= -10.15 + 0.33x1 + 0.18x2 + 5.09x3
+#### ln((p)/(1-p)) = -10.15 + 0.33x1 + 0.18x2 + 5.09x3
 - model: logit model
 - method of estimation: maximum likelihood method
 - y = 0 if bankrupt after 2 years; y = 1 if solvent after 2 years.
