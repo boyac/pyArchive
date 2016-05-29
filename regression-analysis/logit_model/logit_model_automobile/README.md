@@ -1,8 +1,8 @@
-- Description: predict whether a car is foreign on the basis of its weight an mileage.
-- Result: heavier and better mileage cars are less likely to be foreign.
+#### Description: predict whether a car is foreign on the basis of its weight an mileage.
+#### Result: heavier and better mileage cars are less likely to be foreign.
 
 ```stata
- . use http://www.stata-press.com/data/r13/auto, clear
+. use http://www.stata-press.com/data/r13/auto, clear
 (1978 Automobile Data)
 
 . keep make mpg weight foreign
