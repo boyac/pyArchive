@@ -14,5 +14,5 @@
 - support_external (ratio of cost/salary): loose domestic helper regulations, such as affordatbility
 - employment_type (0/1): full-time, dispatch worker
 
-#### Model
+##### Model
 - ln(p/(1-p)) = Marital_Status(0/1) + Salary + Managerial_Position(0/1) + Cultural(categorical_var) + Flexible_Hour(0/1) + Flexible_WorkPlace(0/1) + Number_Daycare + Daycare_center_30mins(0/1) + Employment_type(0/1) + Domestic_Helper_Affordability(Ratio Cost/Salary) 
