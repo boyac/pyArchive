@@ -1,5 +1,5 @@
 ##### Description
-- In the case of Japan
+- In the case of Japan.
 
 ##### Predictor Variables
 - married female employees with kid(s)
