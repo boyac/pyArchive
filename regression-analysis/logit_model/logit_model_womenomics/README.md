@@ -2,7 +2,7 @@
 - In the case of Japan.
 
 ##### Predictor Variables
-- married female employees with kid(s);
+; married female employees with kid(s):
 The reason for picking the variable as expected variable since women tend to leave work after having children.
 Thus, married female employees with kid(s) can see as a proxy to learn what factors will be helpful to keep female employees stay at their corporate positions after having kids.
 
