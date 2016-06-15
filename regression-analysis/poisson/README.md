@@ -1,4 +1,4 @@
-#### ln(u) = constant + beta1*Race + beta2*Income + beta3*GPA
+#### ln(u) = constant + beta1*Race* + beta2*Income* + beta3*GPA*
 - predicts number of job offers, given indivuals race(categorical), parents income(continuous), gpa score(continuous)
 
 ```stata
