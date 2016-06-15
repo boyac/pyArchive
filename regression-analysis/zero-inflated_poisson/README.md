@@ -1,4 +1,4 @@
-
+#### claims of insurance (count data) given gender, number of people in the family, number of children in the family, income level
 
 ```stata
 . summarize sex person child inc count
@@ -11,10 +11,6 @@
          inc |       250    62.52322    21.02394      3.741    102.632
        count |       250       3.296    11.63503          0        149
 
-. histogram count, discrete freq
-(start=0, width=1)
-
-.      
 . zip count sex child inc, inflate(person) vuong
 
 Fitting constant-only model:
