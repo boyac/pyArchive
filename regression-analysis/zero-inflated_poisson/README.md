@@ -1,5 +1,7 @@
 #### claims of insurance (count data) given gender, number of people in the family, number of children in the family, income level
 
+![alt tag](zp.jpg)
+
 ```stata
 . summarize sex person child inc count
 
