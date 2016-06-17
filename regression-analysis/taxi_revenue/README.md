@@ -10,5 +10,3 @@
 - The final revenue will be increased due to the increase of passengers
 
 #### Model
-in order to predict the sales, we need to predict the multipers caused by the starting price drop
-- Number of customers = a + b1*kilometer_per_ride* + b2*starting_fee* + b3*weather_condition* + b4*drivers_working_hours*
