@@ -1,2 +1,0 @@
-- use python 2.7
-- a quick go-through of machine learning recipes
