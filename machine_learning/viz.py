@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Recipes 2 - Iris
 
 # Goals
@@ -56,7 +57,7 @@ tree.export_graphviz(clf,
 			impurity=False)
 
 graph = pydot.graph_from_dot_data(dot_data.getvalue())
-graph.write_pdf('iris.pdf')
+graph.write_pdf('iris.pdf') # AttributeError: 'list' object has no attribute 'write_pdf' 暫時找不到答案
 
 print test_data[0], test_target[0]
 print iris.feature_names, iris.target_names
