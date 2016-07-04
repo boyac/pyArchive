@@ -1,5 +1,5 @@
 # Recipes 3
-#2 features: height, eye color
+# 2 features: height, eye color
 
 import numpy as np
 import matplotlib.pyplot as plt
