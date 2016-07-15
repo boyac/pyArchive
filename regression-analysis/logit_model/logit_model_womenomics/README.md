@@ -12,7 +12,7 @@ Thus, married female employees with kid(s) can see as a proxy to learn what fact
 - managerial position ratio (0/1): among private companies, female only accounts 11% of its managerial positions
 - cultural reform_internal/companies' nations (US:0, European:1, Asia:2): transparent opportunity for promotion, equal importance of responsiblities assigned
 - cultural reform_external: reform seniority and diversity
-- support_internal: promote flexible working hours, places and make it easy to kindergarden schedule and nursury, materity leaves
+- support_internal: promote flexible working hours, places and make it easy to kindergarden schedule and nursury, maternity leaves
 - support_external (ratio of cost/salary): loose domestic helper regulations, such as affordatbility
 - employment_type (0/1): full-time, dispatch worker
 
