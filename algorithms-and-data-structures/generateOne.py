@@ -21,7 +21,7 @@ def score(goal,teststring):
 	for i in range(len(goal)):
 		if goal[i] == teststring[i]:
 			numSame = numSame + 1
-	return numSame / len(goal) 
+	return numSame / len(goal) #scoring accuracy
 
 #print score('methinks it is like a result', generateOne(28))
 def main():
@@ -38,7 +38,7 @@ def main():
 		if newscore > best:
 			print count, best, newscore, newstring
 			#count = count + 1
-			best = newscore
+			best = newscore #replace best score if newscore is better
 		if newscore == 1: 
 			print count, newstring, 'DONE!'
 			exit()
