@@ -1,6 +1,6 @@
 ## ARPU - Estimating Average Revenue Per User in a given timeframe
-- ARPU = Total Revenue / Total # of Installs
-- # of Active Users = Total # of Installs * Retention%<sup>[1](#myfootnote1)</sup>
+- ARPU<sup>[2](#myfootnote2)</sup> = Total Revenue / Total # of Installs
+- # of Active Users = Total # of Installs * Retention%<sup>[2](#myfootnote2)</sup>
 - Total Revenue = Total # of Installs * Retention% * Estimated Average Revenue Per User
 
 
@@ -19,4 +19,5 @@ Based on the above assumptions, we can now only consider factors that influence 
 
 
 #### Reference
-<a name="myfootnote1">[1]</a>: [Survival Analysis in Python](https://github.com/CamDavidsonPilon/lifelines)
+<a name="myfootnote1">[1]</a>: [The Five Mobile Marketing Metrics That Matter Most](https://www.apptentive.com/blog/2015/04/07/the-five-mobile-marketing-metrics-that-matter-most/)
+<a name="myfootnote2">[2]</a>: [Survival Analysis in Python](https://github.com/CamDavidsonPilon/lifelines)
