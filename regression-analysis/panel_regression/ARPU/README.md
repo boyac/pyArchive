@@ -8,3 +8,4 @@ in a given timeframe
 - Retention rate is constant
 - All users are active
 - The main source of disposable income comes from salary
+ 
