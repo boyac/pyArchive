@@ -1,4 +1,4 @@
-- 1. Introduction 
+-- 1. Introduction 
 - 2. Simple Linear Regression 
 - 3. Multiple Linear Regression 
 - 4. Regression Diagnostics: Detection of Model Violations 
