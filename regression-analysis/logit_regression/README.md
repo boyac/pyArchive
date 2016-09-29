@@ -1,6 +1,6 @@
 #### ESTIMATING PROBABILITY OF BANKRUPTCIES
 #### ln((p)/(1-p)) = -10.15 + 0.33x1 + 0.18x2 + 5.09x3
--[Data source: P322.txt](P322.txt)
+[Data source: P322.txt](P322.txt)
 
 - model: logit model
 - method of estimation: maximum likelihood method
