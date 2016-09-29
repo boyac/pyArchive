@@ -2,7 +2,7 @@
 - ARPU = Total Revenue / Total # of Subscribers
 - Total Revenue = Total # of Subscribers * Retention Rate<sup>[1](#myfootnote1)</sup> * Predicted Daily Revenue per User * Estimated # of Days
 
-#### Assumptions:
+#### Assumptions
 in a given timeframe
 - # of installs is constant
 - Retention rate is constant
