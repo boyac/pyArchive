@@ -10,5 +10,5 @@
 * 9. Analysis of Collinear Data 
 * 10. Biased Estimation of Regression Coefficients 
 * 11. Variable Selection Procedures 
-* 12. Logistic Regression 
+* [12. Logistic Regression](ch12.md)
 * 13. Further Topics
