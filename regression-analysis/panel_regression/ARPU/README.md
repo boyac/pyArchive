@@ -16,4 +16,4 @@ in a given timeframe
 
 
 #### Reference
-<a name="Survival Analysis">1</a>: [Survival Analysis:https://github.com/CamDavidsonPilon/lifelines](https://github.com/CamDavidsonPilon/lifelines)
+<a name="Survival Analysis">1</a>: [Survival Analysis in Python](https://github.com/CamDavidsonPilon/lifelines)
