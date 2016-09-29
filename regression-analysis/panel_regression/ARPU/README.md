@@ -4,8 +4,7 @@
 - Total Revenue = Total # of Installs * Retention% * Estimated Average Revenue Per User
 
 
-#### Assumptions
-in a given timeframe
+#### Assumptions (in a given timeframe)
 - # of installs is constant
 - Retention rate is constant
 - All users are active
