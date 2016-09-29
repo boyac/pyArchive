@@ -1,6 +1,9 @@
 ## ARPU - Estimating Average Revenue Per User in a given timeframe
 - ARPU = Total Revenue / Total # of Subscribers
 - Total Revenue = Total # of Subscribers * Retention Rate<sup>[1](#myfootnote1)</sup> * Predicted Daily Revenue per User * Estimated # of Days
+- ARPU = Total Revenue / Total # of Subscribers
+- Total Revenue = Installs * Monthly Retention% * Monthly Average Revenue Per User = Monthly Active Users * Monthly Average Revenue Per User
+- Monthly Active Users = Installs * Monthly Retention%
 
 #### Assumptions
 in a given timeframe
