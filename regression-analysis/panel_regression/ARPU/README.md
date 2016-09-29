@@ -12,3 +12,6 @@ in a given timeframe
 #### Model
 - Predicted Daily Revenue per User = Income level (continuous) + Gender (categorical) + Age group (categorical) [(16-24),
 (25-34), (35-44), (45-54), (55-64), 65 +] + Marital status (categorical) + Occupation (categorical) + Education level (categorical) + Geographical location (categorical) + Devices (categorical) + Frequencies of use of mobile (continuous) + Sessions duration (continuous) + Disposable income multiplier (continuous; accumulative spending / income)
+
+Some long sentence. [^footnote]
+[^footnote]: Test, [Link](https://google.com).
