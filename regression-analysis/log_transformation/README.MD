@@ -1,5 +1,5 @@
 #### predicted lnwage = 0.659 + 0.084GRADE + 0.136LNTENURE - 0.151SOUTH
-[Regression Output: log_transformation.txt](log_transformation.txt)
+- [Regression Output: log_transformation.txt](log_transformation.txt)
 - [Data source: nlsw88.dta](nlsw88.dta)
 
 ```stata
