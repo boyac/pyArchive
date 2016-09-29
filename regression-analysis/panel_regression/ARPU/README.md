@@ -1,6 +1,6 @@
 ## ARPU - Average Revenue Per User 
 - ARPI = Total Revenue / Total # of Active Users
-- Total Revenue = # of Installs * Retention Rate * Rredicted Revenue per User
+- Total Revenue = # of Installs * Retention Rate * Predicted Revenue per User
 
 #### Assumptions:
 in a given timeframe
