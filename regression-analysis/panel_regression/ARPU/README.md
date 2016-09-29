@@ -1,7 +1,7 @@
 ## ARPU - Estimating Average Revenue Per User in a given timeframe
 - ARPU = Total Revenue / Total # of Installs
-- Monthly Active Users = Total # of Installs * Monthly Retention%<sup>[1](#myfootnote1)</sup>
-- Total Revenue = Installs * Monthly Retention% * Monthly Average Revenue Per User
+- # of Active Users = Total # of Installs * Retention%<sup>[1](#myfootnote1)</sup>
+- Total Revenue = Total # of Installs * Retention% * Estimated Average Revenue Per User
 
 
 #### Assumptions
@@ -14,7 +14,7 @@ in a given timeframe
  
 #### Model
 Based on the above assumptions, we can now only consider factors that influence buying behavior.
-- Predicted Daily Revenue per User = Income level (continuous) + Gender (categorical) + Age group (categorical) [(16-24),
+- Estimated Revenue Per User = Income level (continuous) + Gender (categorical) + Age group (categorical) [(16-24),
 (25-34), (35-44), (45-54), (55-64), 65 +] + Marital status (categorical) + Occupation (categorical) + Education level (categorical) + Geographical location (categorical) + Devices (categorical) + Frequencies of use of mobile (continuous) + Sessions duration (continuous) + Disposable income multiplier (continuous; accumulative spending / income)
 
 
