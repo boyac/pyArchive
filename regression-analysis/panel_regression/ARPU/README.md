@@ -1,6 +1,6 @@
 ## ARPU - Estimating Average Revenue Per User in a given timeframe
 - ARPU = Total Revenue / Total # of Subscribers
-- Total Revenue = Total # of Subscribers * Retention Rate<sup>[1](#Survival Analysis)</sup> * Predicted Daily Revenue per User * Estimated # of Days
+- Total Revenue = Total # of Subscribers * Retention Rate<sup>[1](#myfootnote1)</sup> * Predicted Daily Revenue per User * Estimated # of Days
 
 #### Assumptions:
 in a given timeframe
@@ -17,4 +17,4 @@ Based on the above assumptions, we can now only consider factors that influence 
 
 
 #### Reference
-<a name="Survival Analysis">1</a>: [Survival Analysis in Python](https://github.com/CamDavidsonPilon/lifelines)
+<a name="myfootnote1">[1]</a>: [Survival Analysis in Python](https://github.com/CamDavidsonPilon/lifelines)
