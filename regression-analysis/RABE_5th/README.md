@@ -6,7 +6,7 @@
 * [5. Qualitative Variables as Predictors](ch05.md)
 * 6. Transformation of Variables 
 * 7. Weighted Least Squares 
-* 8. The Problem of Correlated Errors 
+* [8. The Problem of Correlated Errors](ch08.md)
 * 9. Analysis of Collinear Data 
 * 10. Biased Estimation of Regression Coefficients 
 * 11. Variable Selection Procedures 
