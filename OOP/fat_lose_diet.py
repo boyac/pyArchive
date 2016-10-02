@@ -2,7 +2,7 @@
 # @Author: boyac
 # @Date:   2016-10-01 22:33:18
 # @Last Modified by:   boyac
-# @Last Modified time: 2016-10-02 00:56:00
+# @Last Modified time: 2016-10-02 12:51:36
 
 class Diet():
 	def __init__(self, kg, height, body_fat, bmi_goal, body_fat_goal):
@@ -68,25 +68,41 @@ class Diet():
 
 	def decalo(self):
 		decalo = self.to_lose * 7700 # calories to lose
-		return 'You Should Lose {} kcal daily for {} days'.format(decalo/ self.days, self.days)
+		self.daily_decalo = decalo/self.days
+		return 'You should lose {} kcal daily for {} days'.format(self.daily_decalo, self.days)
+
+
+	def stepper_time(self):
+		'''
+		30-40 minutes, fat start burning
+		40 minues = 400 calories
+		400/40 = 10 calories/ minute
+		'''
+		calo_burn = 10
+		work_out_time = self.daily_decalo / calo_burn 
+		return 'You should step for {} minutes daily for {} days to reach your goal!'.format(work_out_time, self.days)
 
 
 
 if __name__ == '__main__':
-	d = Diet(57, 1.58, 0.29, 22, 0.22) # weight(kgs), height(m), body_fat(%), bmi_goal(integer), body_fat_goal(%)
+	d = Diet(57, 1.6, 0.29, 22, 0.22) # weight(kgs), height(m), body_fat(%), bmi_goal(integer), body_fat_goal(%)
+	#d = Diet(64, 1.7, 0.29, 21, 0.25)
 	print d.basal()
 	print d.calo_share()
 	print d.goal_bmi()
 	print d.goal_body_fat()
 	print d.plan(60)
 	print d.decalo()
+	print d.stepper_time()
+	
 
 	'''
 	RESULT:
 	Your Basal Metabolism: 1368 kcal
 	Breakfast: 684 kcal; Lunch: 456 kcal; Dinner: 228 kcal
-	Your Ideal BMI: 22; Your Current BMI: 22.8328793463
+	Your Ideal BMI: 22; Your Current BMI: 22.265625
 	Your Ideal Body Fat: 12.54 Kgs; Your Current Body Fat: 16.53 Kgs
 	Your Ideal Weight: 53.01 Kgs. You have to lose 3.99 Kgs in 60 days, 1.995 Kgs monthly
-	You Should Lose 512.05 kcal daily for 60 days
+	You should lose 512.05 kcal daily for 60 days
+	You should step for 51.205 minutes daily for 60 days to reach your goal!
 	'''
