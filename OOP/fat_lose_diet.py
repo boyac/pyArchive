@@ -2,7 +2,7 @@
 # @Author: boyac
 # @Date:   2016-10-01 22:33:18
 # @Last Modified by:   boyac
-# @Last Modified time: 2016-10-02 12:51:36
+# @Last Modified time: 2016-10-02 13:03:10
 
 class Diet():
 	def __init__(self, kg, height, body_fat, bmi_goal, body_fat_goal):
@@ -15,7 +15,7 @@ class Diet():
 
 	def basal(self):
 		self.basal = self.kg * 24
-		return 'Your Basal Metabolism: {} kcal'.format(self.basal)
+		return 'Your Basal Metabolism: {} kcal'.format(self.basal) # could be overestimated
 
 
 	def calo_share(self):
@@ -67,8 +67,8 @@ class Diet():
 
 
 	def decalo(self):
-		decalo = self.to_lose * 7700 # calories to lose
-		self.daily_decalo = decalo/self.days
+		self.decalo = self.to_lose * 7700 # calories to lose
+		self.daily_decalo = self.decalo/self.days
 		return 'You should lose {} kcal daily for {} days'.format(self.daily_decalo, self.days)
 
 
@@ -79,8 +79,17 @@ class Diet():
 		400/40 = 10 calories/ minute
 		'''
 		calo_burn = 10
-		work_out_time = self.daily_decalo / calo_burn 
-		return 'You should step for {} minutes daily for {} days to reach your goal!'.format(work_out_time, self.days)
+		workout_time = self.daily_decalo / calo_burn 
+		return 'You should step for {} minutes daily for {} days to reach your goal!'.format(workout_time, self.days)
+
+
+	def diet_assumption(self):
+		'''
+		Assuming your previous consumption is 400 calories more than your daily basal metabolism (200+700+700 - 1200).
+		Plus diet control, you are able to further lose 400 calories on top of your workout.
+		'''
+		assumption_days = self.decalo / 800 # 40 minutes workout + 400 diet cut
+		return 'Plus diet control, you may be able to achieve your goal faster in {} days'.format(assumption_days)
 
 
 
@@ -94,6 +103,7 @@ if __name__ == '__main__':
 	print d.plan(60)
 	print d.decalo()
 	print d.stepper_time()
+	print d.diet_assumption()
 	
 
 	'''
@@ -105,4 +115,5 @@ if __name__ == '__main__':
 	Your Ideal Weight: 53.01 Kgs. You have to lose 3.99 Kgs in 60 days, 1.995 Kgs monthly
 	You should lose 512.05 kcal daily for 60 days
 	You should step for 51.205 minutes daily for 60 days to reach your goal!
+	Plus diet control, you may be able to achieve your goal faster in 38.40375 days
 	'''
