@@ -80,3 +80,13 @@ if __name__ == '__main__':
 	print d.goal_body_fat()
 	print d.plan(60)
 	print d.decalo()
+
+	'''
+	RESULT:
+	Your Basal Metabolism: 1368 kcal
+	Breakfast: 684 kcal; Lunch: 456 kcal; Dinner: 228 kcal
+	Your Ideal BMI: 22; Your Current BMI: 22.8328793463
+	Your Ideal Body Fat: 12.54 Kgs; Your Current Body Fat: 16.53 Kgs
+	Your Ideal Weight: 53.01 Kgs. You have to lose 3.99 Kgs in 60 days, 1.995 Kgs monthly
+	You Should Lose 512.05 kcal daily for 60 days
+	'''
