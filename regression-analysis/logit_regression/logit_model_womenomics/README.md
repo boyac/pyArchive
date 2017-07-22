@@ -1,10 +1,10 @@
 ##### Description
-- In the case of Japan.
+- This model is trying to tell what incentives have most impact on women to continue work after marriage. This is under the context of Japan.
 
 ##### Predictor Variables
 - married female employees with kid(s) (0/1)
-- //*The reason for picking the variable as expected variable since women tend to leave work after having children.
-Thus, married female employees with kid(s) can see as a proxy to learn what factors will be helpful to keep female employees stay at their corporate positions after having kids.*//
+- *The reason for picking the variable as expected variable since women tend to leave work after having children.
+Thus, married female employees with kid(s) can see as a proxy to learn what factors will be helpful to keep female employees stay at their corporate positions after having kids.*
 
 ##### Predicted Variables
 - tax incentives/marital status (0/1): if spouses' annual income below ￥1.03 million yen, tax reduction of ￥380,000
