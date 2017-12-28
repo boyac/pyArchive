@@ -1,16 +1,16 @@
 #### gs = -7.41cmpg1 - 13.22cmpg2 - 9.59egmt1 + 0.35egmt2 + 5.73bnnr1 + 0.90bnnr2 + 3.30bnnr3 + 2.95bnnr4 - 12.08bnnr5 + 2.53bnnr6 + 4.44bnnr7 - 0.19plcmt1 + 2.50plcmt2 -4.21plcmt3 + 1.84plcmt4 + 4.48plcmt5 + 0.07click + 0.08pcc
 * gross profit = revenue - cost
-* User Engagement: level of engagement of the users
-      * Banner: size of the ad served by Criteo
-      * Placement: publisher space where the ad is served by Criteo
-      * Displays: number of ads served by Criteo
-      * Cost: Price paid by Criteo to serve the ads
-      * Clicks: number of ads clicked by the users
-      * Revenue: Price paid by BurritosOnline for the clicks generated 
-      * Post Click Conversions: On-site transactions that happened in the next 30 days after a click
-      * Post Click Sales Amount: Amount of the on-site transactions that happened in the next 30 days after a click
 
  Campaign: set by BurritosOnline to segment users
+* User Engagement: level of engagement of the users
+* Banner: size of the ad served by Criteo
+* Placement: publisher space where the ad is served by Criteo
+* Displays: number of ads served by Criteo
+* Cost: Price paid by Criteo to serve the ads
+* Clicks: number of ads clicked by the users
+* Revenue: Price paid by BurritosOnline for the clicks generated 
+* Post Click Conversions: On-site transactions that happened in the next 30 days after a click
+* Post Click Sales Amount: Amount of the on-site transactions that happened in the next 30 days after a click
      
 ```stata
  reg gs cmpg1 cmpg2 egmt1 egmt2 bnnr1 bnnr2 bnnr3 bnnr4 bnnr5 bnnr6 bnnr7 plcmt1 plcmt2 plcmt3 plcmt4 plcmt5 display click pcc pcsa
