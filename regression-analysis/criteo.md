@@ -1,6 +1,8 @@
 ## Regression Model
 #### gs = -3.94cmpg1 - 6.92cmpg2 - 5.84egmt1 + 0.03egmt2 + 6.04bnnr1 - 0.06bnnr2 + 5.46bnnr3 - 4.35bnnr4 - 11.29bnnr5 + 4.15bnnr6 + 6.56bnnr7 - 0.54plcmt1 + 3.47plcmt2 - 4.23plcmt3 + 3.23plcmt4 + 6.54plcmt5 + 0.23click - 0.06cmpg1click - 0.17cmpg2click
-* gross profit = revenue - cost
+* gs: gross profit = revenue - cost
+#### Inferencial Stats
+- Des
 
 ## Campaign: set by BurritosOnline to segment users
 * User Engagement: level of engagement of the users
@@ -15,12 +17,13 @@
 
 ## Descriptive Stats
 the number of counts is the counted 0s of clicks with respective campaigns, engagement level, banner sizes, plancement channels.
-- "Campaign 3" has the highest possibility of being clicked.
-- "Low" user engagement has the highest possibility of being clicked.
-- "580 x 400" has the most clicks among other banner sizes.
+- "Campaign 2" has the highest possibility of being clicked.
+- "Medium" user engagement has the highest possibility of being clicked.
+- "580 x 400"(bnnr5) has the most clicks among other banner sizes.
 - "def" is the most clicked channel.
 
 ![alt tag](description.jpg)
+![alt tag](cost.jpg)
 
 ## Categorical Variables
 Please see below of the reclassified categorical variables
