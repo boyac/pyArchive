@@ -1,6 +1,6 @@
 ## Target
 - analyse the current situation: Please see Descriptive Stats
-- provide the top 3 optimizations to apply: Increase Campaign 1, Medium user engagement, "728 x 90" banner, placement 5
+- provide the top 3 optimizations to apply: Increase Campaign 3, Medium user engagement, "728 x 90" banner, placement 5
 - estimate their potential impact/uplift with concrete figures: Please see Inferential Stats
 
 ## Campaign: set by BurritosOnline to segment users
