@@ -32,7 +32,7 @@ the number of counts is the counted 0s of clicks with respective campaigns, enga
 #### gs = -3.94cmpg1 - 6.92cmpg2 - 5.84egmt1 + 0.03egmt2 + 6.04bnnr1 - 0.06bnnr2 + 5.46bnnr3 - 4.35bnnr4 - 11.29bnnr5 + 4.15bnnr6 + 6.56bnnr7 - 0.54plcmt1 + 3.47plcmt2 - 4.23plcmt3 + 3.23plcmt4 + 6.54plcmt5 + 0.23click - 0.06cmpg1click - 0.17cmpg2click
 * gs: gross profit = revenue - cost
 #### Inferencial Stats
-- 1 unit increase in Campaign 2 will hae -6.92 in gross profit.
+- 1 unit increase in Campaign 2 will have -6.92 in gross profit.
 - Medium user engagement has a positive contribution to our gross profit.
 - bnnr7 = 728 x 90 has the highest contribution to our gross profit among other banner sizes, 1 unit increase leads to +6.56 of our gross profit
 - placement 5 "mno" has the highest contribution to our gross profit.
