@@ -1,51 +1,56 @@
-#### gs = 
+#### gs = -7.41cmpg1 - 13.22cmpg2 - 9.59egmt1 + 0.35egmt2 + 5.73bnnr1 + 0.90bnnr2 + 3.30bnnr3 + 2.95bnnr4 - 12.08bnnr5 + 2.53bnnr6 + 4.44bnnr7 - 0.19plcmt1 + 2.50plcmt2 -4.21plcmt3 + 1.84plcmt4 + 4.48plcmt5 + 0.07click + 0.08pcc
 * gross profit = revenue - cost
 
-user engagement
-campaign
-size
-placement
-displays
-cost
-clicks
+ Campaign: set by BurritosOnline to segment users
+-      User Engagement: level of engagement of the users
+-      Banner: size of the ad served by Criteo
+-      Placement: publisher space where the ad is served by Criteo
+-      Displays: number of ads served by Criteo
+-      Cost: Price paid by Criteo to serve the ads
+-      Clicks: number of ads clicked by the users
+-      Revenue: Price paid by BurritosOnline for the clicks generated 
+-      Post Click Conversions: On-site transactions that happened in the next 30 days after a click
+-      Post Click Sales Amount: Amount of the on-site transactions that happened in the next 30 days after a click
 
 ```stata
-. reg gs dengagementh dengagementl dcmpgn1 dcmpgn2 d28 d60 d65 d75 d96 d200 d232 dplace1 dplace2 dplace3 dplace4 dplace5
->  display cost click 
-note: d200 omitted because of collinearity
-note: dplace5 omitted because of collinearity
+ reg gs cmpg1 cmpg2 egmt1 egmt2 bnnr1 bnnr2 bnnr3 bnnr4 bnnr5 bnnr6 bnnr7 plcmt1 plcmt2 plcmt3 plcmt4 plcmt5 display click pcc pcsa
 
-      Source |       SS       df       MS              Number of obs =     683
--------------+------------------------------           F( 17,   665) =   67.74
-       Model |  5588243.72    17  328720.219           Prob > F      =  0.0000
-    Residual |  3226810.47   665  4852.34657           R-squared     =  0.6339
--------------+------------------------------           Adj R-squared =  0.6246
-       Total |   8815054.2   682  12925.2994           Root MSE      =  69.659
+      Source |       SS       df       MS              Number of obs =   15403
+-------------+------------------------------           F( 20, 15382) = 1864.87
+       Model |  51773941.8    20  2588697.09           Prob > F      =  0.0000
+    Residual |    21352332 15382  1388.13756           R-squared     =  0.7080
+-------------+------------------------------           Adj R-squared =  0.7076
+       Total |  73126273.8 15402  4747.84274           Root MSE      =  37.258
 
 ------------------------------------------------------------------------------
           gs |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
 -------------+----------------------------------------------------------------
-dengagementh |   13.97364   7.478947     1.87   0.062      -.7115533    28.65884
-dengagementl |   19.79979   6.410803     3.09   0.002**     7.211938    32.38765
-     dcmpgn1 |   6.330333   6.369657     0.99   0.321      -6.176729    18.83739
-     dcmpgn2 |  -35.95234   7.807854    -4.60   0.000**    -51.28336   -20.62133
-         d28 |  -17.73812   18.84873    -0.94   0.347       -54.7483    19.27207
-         d60 |  -22.44131   18.73838    -1.20   0.231      -59.23482    14.35221
-         d65 |  -34.23231   19.51286    -1.75   0.080      -72.54655    4.081916
-         d75 |   -30.6547   19.09507    -1.61   0.109       -68.1486    6.839192
-         d96 |  -28.02574    18.4289    -1.52   0.129      -64.21159    8.160103
-        d200 |          0  (omitted)
-        d232 |  -22.49835    21.2753    -1.06   0.291       -64.2732     19.2765
-     dplace1 |   2.988378   12.02756     0.25   0.804      -20.62819    26.60494
-     dplace2 |  -6.789674   8.711002    -0.78   0.436      -23.89405    10.31471
-     dplace3 |   1.373714    8.85313     0.16   0.877      -16.00974    18.75717
-     dplace4 |    -25.428   9.703913    -2.62   0.009**      -44.482   -6.374002
-     dplace5 |          0  (omitted)
-     display |  -.0002445   .0001095    -2.23   0.026**    -.0004594   -.0000296
-        cost |   .1200766   .0853163     1.41   0.160      -.0474452    .2875983
-       click |    .084786   .0043299    19.58   0.000**      .076284     .093288
-       _cons |   23.50245   19.88094     1.18   0.238      -15.53452    62.53942
+       cmpg1 |  -7.412024   .6503593   -11.40   0.000    -8.686805   -6.137243
+       cmpg2 |  -13.21711   1.110309   -11.90   0.000    -15.39345   -11.04077
+       egmt1 |  -9.587029   .8080048   -11.87   0.000    -11.17081   -8.003244
+       egmt2 |   .3530195   .7414629     0.48   0.634    -1.100336    1.806374
+       bnnr1 |   5.731244   2.263983     2.53   0.011     1.293571    10.16892
+       bnnr2 |   .8988081   2.228316     0.40   0.687    -3.468955    5.266571
+       bnnr3 |   3.296005   2.228804     1.48   0.139    -1.072714    7.664725
+       bnnr4 |   2.945652   2.219021     1.33   0.184    -1.403891    7.295195
+       bnnr5 |  -12.08462   2.490843    -4.85   0.000    -16.96696   -7.202268
+       bnnr6 |   2.531137   2.204377     1.15   0.251    -1.789701    6.851976
+       bnnr7 |   4.442101    2.24376     1.98   0.048     .0440665    8.840136
+      plcmt1 |  -.1864358   2.234049    -0.08   0.933    -4.565435    4.192563
+      plcmt2 |   2.496886   2.035796     1.23   0.220    -1.493515    6.487288
+      plcmt3 |  -4.207668   2.036922    -2.07   0.039    -8.200275   -.2150601
+      plcmt4 |   1.842779   2.059578     0.89   0.371    -2.194238    5.879796
+      plcmt5 |   4.478166   2.098946     2.13   0.033     .3639825    8.592349
+     display |  -.0009149   .0000147   -62.14   0.000    -.0009437    -.000886
+       click |   .0722916   .0007278    99.33   0.000     .0708651    .0737181
+         pcc |   .0831074   .0114167     7.28   0.000     .0607293    .1054855
+        pcsa |   .0025041   .0002368    10.58   0.000       .00204    .0029683
+       _cons |   4.013357   2.990576     1.34   0.180    -1.848526     9.87524
 ------------------------------------------------------------------------------
+
+. 
+. 
+
 
 ```
 
