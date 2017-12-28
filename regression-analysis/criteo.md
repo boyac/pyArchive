@@ -12,15 +12,11 @@
 * Post Click Conversions: On-site transactions that happened in the next 30 days after a click
 * Post Click Sales Amount: Amount of the on-site transactions that happened in the next 30 days after a click
 
-|           | cmpgclick |	          | egmtclick |	          | bnnrclick	|	plcmtclick |
-| Campaign1 | 2124	     | High	     | 1406	     | 160 x 600	| 577	      | abc	       | 794 |
-Campaign2	345	Medium	1429	240 x 400	130	def	652
-Campaign3	2423	Low	2057	300 x 250	722	ghi	1098
-				468 x 60	1463	jkl	1060
-				580 x 400	16	mno	880
-				670 x 90	845	#N/A	408
-				728 x 90	792		
-				800 x 250	347		`
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |		`
     
     
 ## Categorical Variables
