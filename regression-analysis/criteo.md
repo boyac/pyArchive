@@ -1,3 +1,4 @@
+## Regression Model
 #### gs = -3.94cmpg1 - 6.92cmpg2 - 5.84egmt1 + 0.03egmt2 + 6.04bnnr1 - 0.06bnnr2 + 5.46bnnr3 - 4.35bnnr4 - 11.29bnnr5 + 4.15bnnr6 + 6.56bnnr7 - 0.54plcmt1 + 3.47plcmt2 - 4.23plcmt3 + 3.23plcmt4 + 6.54plcmt5 + 0.23click - 0.06cmpg1click - 0.17cmpg2click
 * gross profit = revenue - cost
 
@@ -12,9 +13,17 @@
 * Post Click Conversions: On-site transactions that happened in the next 30 days after a click
 * Post Click Sales Amount: Amount of the on-site transactions that happened in the next 30 days after a click
 
+## Descriptive Stats
+the number of counts is the counted 0s of clicks with respective campaigns, engagement level, banner sizes, plancement channels.
+- "Campaign 3" has the highest possibility of being clicked.
+- "Low" user engagement has the highest possibility of being clicked.
+- "580 x 400" has the most clicks among other banner sizes.
+- "def" is the most clicked channel.
+
 ![alt tag](description.jpg)
 
 ## Categorical Variables
+Please see below of the reclassified categorical variables
 * cmpg1 = Campaign1
 * cmpg2 = Campaign2
 * egmt1 = High
@@ -34,7 +43,10 @@
 * cmpg1click = cmpg1 * click
 * cmpg2click = cmpg2 * click
 
-### Summary
+## Target
+- analyse the current situation
+- provide the top 3 optimizations to apply
+- estimate their potential impact/uplift with concrete figures.
 
 ```stata
  reg gs cmpg1 cmpg2 egmt1 egmt2 bnnr1 bnnr2 bnnr3 bnnr4 bnnr5 bnnr6 bnnr7 plcmt1 
