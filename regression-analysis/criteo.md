@@ -12,7 +12,7 @@
 * Post Click Conversions: On-site transactions that happened in the next 30 days after a click
 * Post Click Sales Amount: Amount of the on-site transactions that happened in the next 30 days after a click
 
-| cmpgclick        | cmpgclickC           | egmtclick  |egmtclickC|egmtclickC|bnnrclick|plcmtclickC|plcmtclick|
+| Tables        | Are           | Cool  |
 | ------------- |:-------------:| -----:|
 | col 3 is      | right-aligned | $1600 |
 | col 2 is      | centered      |   $12 |
