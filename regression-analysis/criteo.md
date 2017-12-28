@@ -2,15 +2,15 @@
 * gross profit = revenue - cost
 
  Campaign: set by BurritosOnline to segment users
-      User Engagement: level of engagement of the users
-      Banner: size of the ad served by Criteo
-      Placement: publisher space where the ad is served by Criteo
-      Displays: number of ads served by Criteo
-      Cost: Price paid by Criteo to serve the ads
-      Clicks: number of ads clicked by the users
-      Revenue: Price paid by BurritosOnline for the clicks generated 
-      Post Click Conversions: On-site transactions that happened in the next 30 days after a click
-      Post Click Sales Amount: Amount of the on-site transactions that happened in the next 30 days after a click
+      *User Engagement: level of engagement of the users
+      *Banner: size of the ad served by Criteo
+      *Placement: publisher space where the ad is served by Criteo
+      *Displays: number of ads served by Criteo
+      *Cost: Price paid by Criteo to serve the ads
+      *Clicks: number of ads clicked by the users
+      *Revenue: Price paid by BurritosOnline for the clicks generated 
+      *Post Click Conversions: On-site transactions that happened in the next 30 days after a click
+      *Post Click Sales Amount: Amount of the on-site transactions that happened in the next 30 days after a click
 
 ```stata
  reg gs cmpg1 cmpg2 egmt1 egmt2 bnnr1 bnnr2 bnnr3 bnnr4 bnnr5 bnnr6 bnnr7 plcmt1 plcmt2 plcmt3 plcmt4 plcmt5 display click pcc pcsa
