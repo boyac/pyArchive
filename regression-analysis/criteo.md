@@ -1,7 +1,7 @@
-#### gs = -7.41cmpg1 - 13.22cmpg2 - 9.59egmt1 + 0.35egmt2 + 5.73bnnr1 + 0.90bnnr2 + 3.30bnnr3 + 2.95bnnr4 - 12.08bnnr5 + 2.53bnnr6 + 4.44bnnr7 - 0.19plcmt1 + 2.50plcmt2 -4.21plcmt3 + 1.84plcmt4 + 4.48plcmt5 + 0.07click + 0.08pcc
+#### gs = -3.94cmpg1 - 6.92cmpg2 - 5.84egmt1 + 0.03egmt2 + 6.04bnnr1 - 0.06bnnr2 + 5.46bnnr3 - 4.35bnnr4 - 11.29bnnr5 + 4.15bnnr6 + 6.56bnnr7 - 0.54plcmt1 + 3.47plcmt2 - 4.23plcmt3 + 3.23plcmt4 + 6.54plcmt5 + 0.23click - 0.06cmpg1click - 0.17cmpg2click
 * gross profit = revenue - cost
 
- Campaign: set by BurritosOnline to segment users
+## Campaign: set by BurritosOnline to segment users
 * User Engagement: level of engagement of the users
 * Banner: size of the ad served by Criteo
 * Placement: publisher space where the ad is served by Criteo
@@ -12,7 +12,7 @@
 * Post Click Conversions: On-site transactions that happened in the next 30 days after a click
 * Post Click Sales Amount: Amount of the on-site transactions that happened in the next 30 days after a click
 
-categorical variables
+## Categorical Variables
 * cmpg1 = Campaign1
 * cmpg2 = Campaign2
 * egmt1 = High
@@ -29,6 +29,8 @@ categorical variables
 * plcmt3 = ghi
 * plcmt4 = jkl
 * plcmt5 = mno
+* cmpg1click = cmpg1 * click
+* cmpg2click = cmpg2 * click
 
 ### Summary
 
