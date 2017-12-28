@@ -1,8 +1,7 @@
-## Regression Model
-#### gs = -3.94cmpg1 - 6.92cmpg2 - 5.84egmt1 + 0.03egmt2 + 6.04bnnr1 - 0.06bnnr2 + 5.46bnnr3 - 4.35bnnr4 - 11.29bnnr5 + 4.15bnnr6 + 6.56bnnr7 - 0.54plcmt1 + 3.47plcmt2 - 4.23plcmt3 + 3.23plcmt4 + 6.54plcmt5 + 0.23click - 0.06cmpg1click - 0.17cmpg2click
-* gs: gross profit = revenue - cost
-#### Inferencial Stats
-- Des
+## Target
+- analyse the current situation: Please see Descriptive Stats
+- provide the top 3 optimizations to apply: Increase Campaign 1, Medium user engagement, "728 x 90" banner, placement 5
+- estimate their potential impact/uplift with concrete figures: Please see Inferential Stats
 
 ## Campaign: set by BurritosOnline to segment users
 * User Engagement: level of engagement of the users
@@ -17,13 +16,26 @@
 
 ## Descriptive Stats
 the number of counts is the counted 0s of clicks with respective campaigns, engagement level, banner sizes, plancement channels.
-- "Campaign 2" has the highest possibility of being clicked.
+- "Campaign 2" has the highest possibility of being clicked. 
+- "Campaign 3" has the lowest average cost. 
 - "Medium" user engagement has the highest possibility of being clicked.
+- "Medium" user engagement has the lowest average cost. 
 - "580 x 400"(bnnr5) has the most clicks among other banner sizes.
+- "800 x 250" has the lowest average cost.
 - "def" is the most clicked channel.
+- "abc" has the lowest average placement cost.
 
 ![alt tag](description.jpg)
 ![alt tag](cost.jpg)
+
+## Regression Model
+#### gs = -3.94cmpg1 - 6.92cmpg2 - 5.84egmt1 + 0.03egmt2 + 6.04bnnr1 - 0.06bnnr2 + 5.46bnnr3 - 4.35bnnr4 - 11.29bnnr5 + 4.15bnnr6 + 6.56bnnr7 - 0.54plcmt1 + 3.47plcmt2 - 4.23plcmt3 + 3.23plcmt4 + 6.54plcmt5 + 0.23click - 0.06cmpg1click - 0.17cmpg2click
+* gs: gross profit = revenue - cost
+#### Inferencial Stats
+- 1 unit increase in Campaign 2 will hae -6.92 in gross profit.
+- Medium user engagement has a positive contribution to our gross profit.
+- bnnr7 = 728 x 90 has the highest contribution to our gross profit among other banner sizes, 1 unit increase leads to +6.56 of our gross profit
+- placement 5 "mno" has the highest contribution to our gross profit.
 
 ## Categorical Variables
 Please see below of the reclassified categorical variables
@@ -46,10 +58,6 @@ Please see below of the reclassified categorical variables
 * cmpg1click = cmpg1 * click
 * cmpg2click = cmpg2 * click
 
-## Target
-- analyse the current situation
-- provide the top 3 optimizations to apply
-- estimate their potential impact/uplift with concrete figures.
 
 ```stata
  reg gs cmpg1 cmpg2 egmt1 egmt2 bnnr1 bnnr2 bnnr3 bnnr4 bnnr5 bnnr6 bnnr7 plcmt1 
